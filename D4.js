@@ -117,9 +117,11 @@ console.log(upperfirst("This is a cat."))
 function giveMeRandom (n) {
     let Nums = [];
     for (i = 0; i < n; i++) {
-
+        Nums.push(Math.floor(Math.random() * 10));
+    }
+    return Nums;
     
 }
 
-console.log(giveMeRandom(4))
+console.log(giveMeRandom(4));
 /* SCRIVI QUI LA TUA RISPOSTA */
