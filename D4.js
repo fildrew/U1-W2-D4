@@ -14,12 +14,14 @@ console.log(area(5, 10));
  la loro somma moltiplicata per tre.
 */
 function crazySum(a, b) {
+
   if (a === b) {
     return (a + b) * 3;
   } else {
     return a + b;
   }
 }
+
 console.log(crazySum(6, 5));
 
 /* ESERCIZIO 3
@@ -45,7 +47,7 @@ function boundary(n) {
   return trueOrFalse;
 }
 console.log(boundary(7));
-console.log(boundary(400));
+
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -105,13 +107,12 @@ console.log(reverseString("EPICODE"));
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 function giveMeRandom (n) {
-    let Nums = [];
-    for (i = 0; i < n; i++) {
-        Nums.push(Math.floor(Math.random() * 10));
+    let arraywithNums = [];
+    for (i = 0; i < n.length; i++) {
+        arraywithNums.push(Math.floor(Math.random() * 10));
     }
-    return Nums;
-    
+    return arraywithNums;    
 }
 
-console.log(giveMeRandom(4));
+console.log(giveMeRandom(3));
 /* SCRIVI QUI LA TUA RISPOSTA */
