@@ -100,19 +100,21 @@ console.log(reverseString("EPICODE"));
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
+function cutString () {
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+}
+
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 function giveMeRandom (n) {
     let arraywithNums = [];
-    for (i = 0; i < n.length; i++) {
+    for (i = 0; i < n; i++) {
         arraywithNums.push(Math.floor(Math.random() * 10));
     }
     return arraywithNums;    
 }
 
-console.log(giveMeRandom(3));
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log(giveMeRandom(4));
+
