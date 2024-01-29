@@ -14,7 +14,6 @@ console.log(area(5, 10));
  la loro somma moltiplicata per tre.
 */
 function crazySum(a, b) {
-
   if (a === b) {
     return (a + b) * 3;
   } else {
@@ -47,7 +46,6 @@ function boundary(n) {
   return trueOrFalse;
 }
 console.log(boundary(7));
-
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -94,27 +92,41 @@ console.log(reverseString("EPICODE"));
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
+function upperFirst(str) {
+  const words = str.split(" ");
+  let newstring = "";
+  for (i = 0; i < words.length; i++) {
+    console.log(words[i]);
+    const firstChar = words[i].charAt(0).toUpperCase();
+    console.log(firstChar);
+    const lastletters = words[i].slice(1);
+    const upperWord = firstChar + lastletters;
+    console.log(upperWord);
+    newstring += upperFirst + " ";
+  }
+  return newstring;
+}
 
-
+upperFirst("Ciao mi chiamo Giovanni");
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
-function cutString () {
-
+function cutString(str) {
+  const modifiedStr = str.substring(1,str.length-1);
+  return modifiedStr; 
 }
 
-
+cutString(cutString("Epicode"));
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
-function giveMeRandom (n) {
-    let arraywithNums = [];
-    for (i = 0; i < n; i++) {
-        arraywithNums.push(Math.floor(Math.random() * 10));
-    }
-    return arraywithNums;    
+function giveMeRandom(n) {
+  let arraywithNums = [];
+  for (i = 0; i < n; i++) {
+    arraywithNums.push(Math.floor(Math.random() * 11));
+  }
+  return arraywithNums;
 }
 
 console.log(giveMeRandom(4));
-
